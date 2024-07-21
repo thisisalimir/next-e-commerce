@@ -8,13 +8,4 @@ module.exports = {
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
   },
-  overrides: [
-    {
-      files: ['*.ts', '*.tsx'],
-      rules: {
-        'simple-import-sort/imports': 'error',
-        'simple-import-sort/exports': 'error',
-      },
-    },
-  ],
 }
