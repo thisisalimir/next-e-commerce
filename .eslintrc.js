@@ -1,10 +1,6 @@
 module.exports = {
   root: true,
-  extends: [
-    'plugin:@next/next/recommended',
-    '@payloadcms',
-    'plugin:prettier/recommended', // This enables the Prettier plugin and sets it to "error"
-  ],
+  extends: ['plugin:@next/next/recommended', '@payloadcms', 'plugin:prettier/recommended'],
   ignorePatterns: ['**/payload-types.ts'],
   plugins: ['prettier', 'simple-import-sort'],
   rules: {
@@ -12,4 +8,13 @@ module.exports = {
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        'simple-import-sort/imports': 'error',
+        'simple-import-sort/exports': 'error',
+      },
+    },
+  ],
 }
