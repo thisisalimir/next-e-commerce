@@ -5,6 +5,7 @@ module.exports = {
     '@payloadcms',
     'plugin:prettier/recommended', // This enables the Prettier plugin and sets it to "error"
   ],
+  files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
   ignorePatterns: ['**/payload-types.ts'],
   plugins: ['prettier', 'simple-import-sort'],
   rules: {
